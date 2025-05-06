@@ -4,9 +4,10 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+/* ------------------------NAVBAR---------------------------------*/
 
 header {
-  min-height: 80px;
+  height: 150px;
   border-bottom: 1px solid #33333333;
 }
 
@@ -24,7 +25,6 @@ header {
 }
 
 .item-list {
-  width: 100%;
   border-bottom: 1px solid #33333333;
 }
 
@@ -38,11 +38,77 @@ header {
   text-transform: capitalize;
 }
 
+/* ------------------------HOME---------------------------------*/
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: calc(100vh - 150px);
+}
+
+.section-home {
+  background-color: #c4daf7;
+}
+
+.titulo-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.titulo-inicio h2 {
+  text-align: center;
+  color: #333333;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.titulo-inicio p {
+  text-align: center;
+  margin: 15px 0;
+  color: #515151;
+  font-size: 14px;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px;
+  border: 1px solid #4a90e2;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.btn-contacto {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-categorias {
+  background-color: transparent;
+  color: #4a90e2;
+}
+
+/* ------------------------QUERYS---------------------------------*/
+
 @media (min-width: 600px) {
   header {
+    position: sticky;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 80px;
   }
   .titel {
     display: block;
@@ -50,18 +116,23 @@ header {
   .menu {
     flex-direction: row;
   }
-  .item-list{
+  .item-list {
     border: none;
+  }
+
+  /* -------------------------------HOME-------------------------- */
+
+  .main-container {
+    min-height: calc(100vh - 80px);
   }
 }
 
-
 @media (min-width: 900px) {
-    .menu li:hover{
-        background-color: #33333333;
-        border-radius: 10px;
-    }
-    .menu{
-        gap: 20px;
-    }
+  .menu li:hover {
+    background-color: #33333333;
+    border-radius: 10px;
+  }
+  .menu {
+    gap: 20px;
+  }
 }
