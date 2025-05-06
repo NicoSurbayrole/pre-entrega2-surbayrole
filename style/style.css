@@ -9,6 +9,7 @@
 header {
   height: 150px;
   border-bottom: 1px solid #33333333;
+  background-color: #fff;
 }
 
 .titel {
@@ -43,7 +44,10 @@ header {
 .main-container {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: calc(100vh - 150px);
+}
+
+.main-container section {
+    min-height: calc(100vh - 80px);
 }
 
 .section-home {
@@ -86,17 +90,29 @@ header {
   border: 1px solid #4a90e2;
   border-radius: 15px;
   width: 150px;
+  cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .btn-contacto {
   background-color: #4a90e2;
-  color: white;
+  
 }
 
 .btn-categorias {
   background-color: transparent;
-  color: #4a90e2;
 }
+
+.btn-categorias a{
+    color: #4a90e2;
+}
+
+/* ------------------------CATEGORIAS---------------------------------*/
+
 
 /* ------------------------QUERYS---------------------------------*/
 
@@ -122,9 +138,18 @@ header {
 
   /* -------------------------------HOME-------------------------- */
 
-  .main-container {
-    min-height: calc(100vh - 80px);
+  .titulo-inicio h2{
+    font-size: 40px;
   }
+
+  .titulo-inicio p {
+    font-size: 20px;
+  }
+
+  .btn{
+    font-size: 20px;
+  }
+
 }
 
 @media (min-width: 900px) {
