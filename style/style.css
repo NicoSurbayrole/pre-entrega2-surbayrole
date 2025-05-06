@@ -208,6 +208,7 @@ header {
   .home-categorias{
     grid-template-columns: repeat(3, 1fr);
     margin-top: 40px;
+    gap: 20px;
   }
 
   .titulo-categorias h2{
