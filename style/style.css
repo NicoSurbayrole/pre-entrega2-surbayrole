@@ -113,6 +113,48 @@ header {
 
 /* ------------------------CATEGORIAS---------------------------------*/
 
+.titulo-categorias {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    margin-top: 30px;
+    color: #333333;
+}
+
+.home-categorias {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    gap: 30px;
+}
+.home-categorias article{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-categorias article img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.home-categorias article img:hover{
+    scale: 1.1;
+}
+
+.home-categorias article h3{
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    bottom: 10px;
+    width: 40%;
+    border: 1px solid #33333333; 
+    background: linear-gradient( to right , rgba(255, 255, 255, 1), rgba(255, 255, 255, .4));
+    border-radius: 10px;
+    padding: 5px;
+}
 
 /* ------------------------QUERYS---------------------------------*/
 
