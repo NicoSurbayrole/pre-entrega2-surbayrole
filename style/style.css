@@ -48,7 +48,7 @@ header {
 }
 
 .main-container section {
-    min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
 }
 
 .section-home {
@@ -94,68 +94,124 @@ header {
   cursor: pointer;
 }
 
-.btn a{
-    text-decoration: none;
-    color: white;
+.btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .btn-contacto {
   background-color: #4a90e2;
-  
 }
 
 .btn-categorias {
   background-color: transparent;
 }
 
-.btn-categorias a{
-    color: #4a90e2;
+.btn-categorias a {
+  color: #4a90e2;
 }
 
 /* ------------------------CATEGORIAS---------------------------------*/
 
+#categorias {
+  min-height: 60vh;
+}
+
 .titulo-categorias {
-    display: flex;
-    justify-content: center;
-    text-transform: capitalize;
-    margin-top: 30px;
-    color: #333333;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-top: 30px;
+  color: #333333;
 }
 
 .home-categorias {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 20px;
-    gap: 20%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+  gap: 20px;
 }
-.home-categorias article{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.home-categorias article img{
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+.home-categorias article {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.home-categorias article img:hover{
-    scale: 1.1;
+.home-categorias article img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
 }
 
-.home-categorias article h3{
-    position: absolute;
-    text-align: center;
-    text-transform: capitalize;
-    bottom: 10px;
-    width: 40%;
-    border: 1px solid #33333333; 
-    background: linear-gradient( to right , rgba(255, 255, 255, 1), rgba(255, 255, 255, .4));
+.home-categorias article img:hover {
+  scale: 1.1;
+}
+
+.home-categorias article h3 {
+  position: absolute;
+  text-align: center;
+  text-transform: capitalize;
+  bottom: 10px;
+  width: 40%;
+  border: 1px solid #33333333;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.4)
+  );
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* ------------------------CONTACTO---------------------------------*/
+
+#contacto {
+  min-height: 50vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 5px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.form-group input, textarea {
+    border: 2px solid #4a90e2;
+    padding: 5px;
+    border-radius: 5px;
+    resize: none;
+    overflow: auto;
+}
+
+.form-btn{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.form .btn-contacto {
+    align-self: flex-start;
+    width: 100%;
+    font-size: 16px;
+    border: none;
     border-radius: 10px;
     padding: 5px;
+    text-transform: capitalize;
+    color: #fff;
 }
+
 
 /* ------------------------QUERYS---------------------------------*/
 
@@ -181,7 +237,7 @@ header {
 
   /* -------------------------------HOME-------------------------- */
 
-  .titulo-inicio h2{
+  .titulo-inicio h2 {
     font-size: 40px;
   }
 
@@ -189,8 +245,14 @@ header {
     font-size: 20px;
   }
 
-  .btn{
+  .btn {
     font-size: 20px;
+  }
+
+  /* -------------------------------CATEGORIAS-------------------------- */
+
+  .home-categorias {
+    gap: 30px;
   }
 
 }
@@ -206,26 +268,30 @@ header {
 
   /* -------------------------------CATEGORIAS-------------------------- */
 
-  .home-categorias{
+  .home-categorias {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 40px;
     gap: 20px;
   }
 
-  .titulo-categorias h2{
+  .titulo-categorias h2 {
     font-size: 40px;
   }
 
-  .home-categorias article img{
+  .home-categorias article img {
     width: 80%;
     height: 100%;
   }
 
-  .home-categorias article h3{
+  .home-categorias article h3 {
     width: 70%;
     padding: 15px;
     border-radius: 15px;
     font-size: 20px;
   }
+
+  /* -------------------------------FORM-------------------------- */
+
+  
 
 }

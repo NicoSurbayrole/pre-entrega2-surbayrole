@@ -10,46 +10,94 @@
     <header>
       <h1 class="titel">pinckCalzados</h1>
       <ul class="menu">
-          <li class="item-list"><a href="./index.html">inicio</a></li>
-          <li class="item-list"><a href="#categorias">categorias</a></li>
-          <li class="item-list"><a href="#ofertas">ofertas</a></li>
-          <li><a href="#contacto">contacto</a></li>
+        <li class="item-list"><a href="./index.html">inicio</a></li>
+        <li class="item-list"><a href="#categorias">categorias</a></li>
+        <li class="item-list"><a href="#ofertas">ofertas</a></li>
+        <li><a href="#contacto">contacto</a></li>
       </ul>
     </header>
 
     <main>
-        <div class="main-container">
-            <section class="section-home">
-                <div class="titulo-inicio">
-                    <h2>estilos y comodidad para todos</h2>
-                    <p>Descubre nuestra colección de calzado para cada estilo</p>
-                    <div class="btn-container">
-                        <button class="btn btn-contacto"><a href="#contacto">contacto</a></button>
-                        <button class="btn btn-categorias"><a href="#categorias">categorias</a></button>
-                    </div>
-                </div>
-            </section>
-            <section id="categorias">
-                <div class="titulo-categorias">
-                    <h2>categorias</h2>
-                </div>
-                <div class="home-categorias">
-                    <article>
-                        <img src="./assets/img/casual.png" alt="zapatilla casual" width="50%">
-                        <h3>casual</h3>
-                    </article>
-                    <article>
-                        <img src="./assets/img/deportivo.png" alt="zapatilla casual" width="50%">
-                        <h3>deportivo</h3>
-                    </article>
-                    <article>
-                        <img src="./assets/img/urbano.jpg" alt="zapatilla casual" width="50%">
-                        <h3>urbano</h3>
-                    </article>
-                </div>
-            </section>
-            
-        </div>
+      <div class="main-container">
+        <section class="section-home">
+          <div class="titulo-inicio">
+            <h2>estilos y comodidad para todos</h2>
+            <p>Descubre nuestra colección de calzado para cada estilo</p>
+            <div class="btn-container">
+              <button class="btn btn-contacto">
+                <a href="#contacto">contacto</a>
+              </button>
+              <button class="btn btn-categorias">
+                <a href="#categorias">categorias</a>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="categorias">
+          <div class="titulo-categorias">
+            <h2>categorias</h2>
+          </div>
+          <div class="home-categorias">
+            <article>
+              <img
+                src="./assets/img/casual.png"
+                alt="zapatilla casual"
+                width="50%"
+              />
+              <h3>casual</h3>
+            </article>
+            <article>
+              <img
+                src="./assets/img/deportivo.png"
+                alt="zapatilla casual"
+                width="50%"
+              />
+              <h3>deportivo</h3>
+            </article>
+            <article>
+              <img
+                src="./assets/img/urbano.jpg"
+                alt="zapatilla casual"
+                width="50%"
+              />
+              <h3>urbano</h3>
+            </article>
+          </div>
+        </section>
+        <section id="contacto">
+          <div class="titulo-categorias">
+            <h2>contacto</h2>
+          </div>
+          <form class="form" action="">
+            <div class="form-group">
+              <label for="nombre">nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="nombre"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email" placeholder="email" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="mensaje"
+              ></textarea>
+            </div>
+            <div class="form-btn">
+              <button class="btn-contacto">enviar</button>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
   </body>
 </html>
