@@ -29,11 +29,39 @@ header {
 }
 
 .menu li {
-  padding: 10px;
+  padding: 5px;
 }
 
 .menu a {
-  color: black;
+  color: #333333;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .titel {
+    display: block;
+  }
+  .menu {
+    flex-direction: row;
+  }
+  .item-list{
+    border: none;
+  }
+}
+
+
+@media (min-width: 900px) {
+    .menu li:hover{
+        background-color: #33333333;
+        border-radius: 10px;
+    }
+    .menu{
+        gap: 20px;
+    }
 }
