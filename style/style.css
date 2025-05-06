@@ -9,6 +9,7 @@
 header {
   height: 150px;
   border-bottom: 1px solid #33333333;
+  background-color: #fff;
 }
 
 .titel {
@@ -43,7 +44,10 @@ header {
 .main-container {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: calc(100vh - 150px);
+}
+
+.main-container section {
+    min-height: calc(100vh - 80px);
 }
 
 .section-home {
@@ -86,16 +90,70 @@ header {
   border: 1px solid #4a90e2;
   border-radius: 15px;
   width: 150px;
+  cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .btn-contacto {
   background-color: #4a90e2;
-  color: white;
+  
 }
 
 .btn-categorias {
   background-color: transparent;
-  color: #4a90e2;
+}
+
+.btn-categorias a{
+    color: #4a90e2;
+}
+
+/* ------------------------CATEGORIAS---------------------------------*/
+
+.titulo-categorias {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    margin-top: 30px;
+    color: #333333;
+}
+
+.home-categorias {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    gap: 20%;
+}
+.home-categorias article{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home-categorias article img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.home-categorias article img:hover{
+    scale: 1.1;
+}
+
+.home-categorias article h3{
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    bottom: 10px;
+    width: 40%;
+    border: 1px solid #33333333; 
+    background: linear-gradient( to right , rgba(255, 255, 255, 1), rgba(255, 255, 255, .4));
+    border-radius: 10px;
+    padding: 5px;
 }
 
 /* ------------------------QUERYS---------------------------------*/
@@ -122,9 +180,18 @@ header {
 
   /* -------------------------------HOME-------------------------- */
 
-  .main-container {
-    min-height: calc(100vh - 80px);
+  .titulo-inicio h2{
+    font-size: 40px;
   }
+
+  .titulo-inicio p {
+    font-size: 20px;
+  }
+
+  .btn{
+    font-size: 20px;
+  }
+
 }
 
 @media (min-width: 900px) {
@@ -135,4 +202,28 @@ header {
   .menu {
     gap: 20px;
   }
+
+  /* -------------------------------CATEGORIAS-------------------------- */
+
+  .home-categorias{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+  }
+
+  .titulo-categorias h2{
+    font-size: 40px;
+  }
+
+  .home-categorias article img{
+    width: 80%;
+    height: 100%;
+  }
+
+  .home-categorias article h3{
+    width: 70%;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+
 }
