@@ -3,18 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Nicolas Surbayrole" />
+    <meta name="theme-color" content="#4a90e2">
+    <meta
+      name="description"
+      content="Descubre en PinckCalzados una amplia variedad de calzados cómodos, modernos y duraderos. Ideal para el uso diario o para ocasiones especiales."
+    />
+    <meta
+      name="keywords"
+      content="calzado, calzados, zapatilla, zapatillas, zapatos, zapatos urbanos, calzado deportivo, calzado casual, calzado urbano, zapatos deportivos, zapatos casuales, zapatillas casuales, zapatillas deportivas, zapatillas urbanas, deportivo, casual, urbano, calzado unisex, tienda de calzado online, PinckCalzados, "
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/style.css" />
-    <title>PinckCalzados</title>
+    <title>PinckCalzados - Calzado cómodo y con estilo</title>
   </head>
   <body>
     <header>
       <h1 class="titel">pinckCalzados</h1>
       <ul class="menu">
-        <li class="item-list"><a href="./index.html">inicio</a></li>
-        <li class="item-list"><a href="#categorias">categorias</a></li>
-        <li class="item-list"><a href="#ofertas">ofertas</a></li>
-        <li><a href="#contacto">contacto</a></li>
+        <li class="item-list">
+          <a href="./index.html" title="inicio">inicio</a>
+        </li>
+        <li class="item-list">
+          <a href="#categorias" title="categorias">categorias</a>
+        </li>
+        <li class="item-list">
+          <a href="#ofertas" title="ofertas">ofertas</a>
+        </li>
+        <li><a href="#contacto" title="contacto">contacto</a></li>
       </ul>
     </header>
 
@@ -26,10 +43,10 @@
             <p>Descubre nuestra colección de calzado para cada estilo</p>
             <div class="btn-container">
               <button class="btn btn-contacto">
-                <a href="#contacto">contacto</a>
+                <a href="#contacto" title="contacto">contacto</a>
               </button>
               <button class="btn btn-categorias">
-                <a href="#categorias">categorias</a>
+                <a href="#categorias" title="categorias">categorias</a>
               </button>
             </div>
           </div>
@@ -38,7 +55,11 @@
           <div class="titulo-categorias">
             <h2>categorias</h2>
           </div>
-          <div class="home-categorias" data-aos="zoom-in" data-aos-duration="1000">
+          <div
+            class="home-categorias"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <article>
               <img
                 src="./assets/img/casual.png"
@@ -69,7 +90,7 @@
           <div class="titulo-categorias">
             <h2>contacto</h2>
           </div>
-          <form class="form" action=""  data-aos="fade-rigthg">
+          <form class="form" action="" data-aos="fade-rigthg">
             <div class="form-group">
               <label for="nombre">nombre</label>
               <input
@@ -109,24 +130,29 @@
         <article class="footer">
           <h3>enlaces rapidos</h3>
           <ul class="atajos">
-            <a href="./index.html"><li>inicio</li></a>
-            <a href="#categorias"><li>categorias</li></a>
-            <a href="#"><li>ofertas</li></a>
-            <a href="#contacto"><li>contacto</li></a>
+            <a href="./index.html" title="inicio"><li>inicio</li></a>
+            <a href="#categorias" title="categorias"><li>categorias</li></a>
+            <a href="#" title="ofertas"><li>ofertas</li></a>
+            <a href="#contacto" title="contacto"><li>contacto</li></a>
           </ul>
         </article>
         <article class="footer">
           <h3>seguinos</h3>
           <div class="redes">
-            <a target="_blank" href="https://www.instagram.com/pink_calzadoss/"
+            <a
+              title="instagram"
+              target="_blank"
+              href="https://www.instagram.com/pink_calzadoss/"
               ><img src="../assets/img/instagram.png" alt="instagram icon"
             /></a>
             <a
+              title="github"
               target="_blank"
               href="https://github.com/NicoSurbayrole/pre-entrega2"
               ><img src="../assets/img/github.png" alt="Githube icon"
             /></a>
             <a
+              title="linkedin"
               target="_blank"
               href="https://www.linkedin.com/in/nico-surbayrole/"
               ><img src="../assets/img/linkedin.png" alt="linkedin icon"
@@ -139,6 +165,8 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
